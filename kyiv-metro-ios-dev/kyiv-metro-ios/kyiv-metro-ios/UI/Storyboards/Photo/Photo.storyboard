@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khh-RP-q3R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khh-RP-q3R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -55,7 +57,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-El-e34" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
-                                <rect key="frame" x="250.5" y="692" width="138.5" height="23"/>
+                                <rect key="frame" x="250.5" y="664" width="138.5" height="23"/>
                                 <state key="normal" title="Зробити фото " image="arrow-left"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
@@ -67,7 +69,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="q3c-DJ-KUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="79d-4v-cFP" firstAttribute="leading" secondItem="q3c-DJ-KUk" secondAttribute="leading" constant="16" id="1lY-Ua-nhL"/>
                             <constraint firstItem="nFC-q9-UHE" firstAttribute="leading" secondItem="q3c-DJ-KUk" secondAttribute="leading" constant="16" id="4Ed-rS-lhf"/>
@@ -82,12 +85,11 @@
                             <constraint firstItem="pFX-fg-W6t" firstAttribute="leading" secondItem="nFC-q9-UHE" secondAttribute="leading" id="iWl-n0-eRQ"/>
                             <constraint firstItem="q3c-DJ-KUk" firstAttribute="trailing" secondItem="nFC-q9-UHE" secondAttribute="trailing" constant="16" id="kgX-RE-uHn"/>
                             <constraint firstItem="pFX-fg-W6t" firstAttribute="top" secondItem="nFC-q9-UHE" secondAttribute="bottom" constant="8" id="pgn-gM-yes"/>
-                            <constraint firstItem="js0-El-e34" firstAttribute="top" secondItem="79d-4v-cFP" secondAttribute="bottom" constant="28" id="s0j-e6-3Y6"/>
+                            <constraint firstItem="js0-El-e34" firstAttribute="top" secondItem="79d-4v-cFP" secondAttribute="bottom" id="s0j-e6-3Y6"/>
                             <constraint firstItem="f62-cl-AHT" firstAttribute="trailing" secondItem="pFX-fg-W6t" secondAttribute="trailing" id="tSx-TI-7Fh"/>
                             <constraint firstItem="AdB-GW-ait" firstAttribute="top" secondItem="f62-cl-AHT" secondAttribute="bottom" constant="32" id="vAO-Fp-28i"/>
                             <constraint firstItem="f62-cl-AHT" firstAttribute="leading" secondItem="pFX-fg-W6t" secondAttribute="leading" id="viD-S6-H3q"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="q3c-DJ-KUk"/>
                     </view>
                     <connections>
                         <outlet property="companyLabel" destination="AdB-GW-ait" id="76E-7R-vnF"/>
@@ -98,11 +100,19 @@
             <point key="canvasLocation" x="101" y="149"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="js0-El-e34">
+            <size key="intrinsicContentSize" width="138.5" height="23"/>
+        </designable>
+    </designables>
     <resources>
         <image name="arrow-left" width="12.5" height="23"/>
         <image name="photo-guide" width="343" height="358"/>
         <namedColor name="themeDarkGray">
             <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mGY-cP-LJn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mGY-cP-LJn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -43,10 +45,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-green" translatesAutoresizingMaskIntoConstraints="NO" id="8kg-va-188">
-                                        <rect key="frame" x="142" y="117.5" width="130" height="98"/>
+                                        <rect key="frame" x="174.5" y="166.5" width="65" height="49"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="aGG-KG-e7C" secondAttribute="bottom" id="65M-p4-dCR"/>
                                     <constraint firstAttribute="bottom" secondItem="lNh-2e-scF" secondAttribute="bottom" constant="15" id="6FS-O2-jeM"/>
@@ -90,7 +92,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toB-Dj-dpf" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toB-Dj-dpf" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
                                 <rect key="frame" x="24" y="505.5" width="366" height="48"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Увійти">
@@ -100,7 +102,7 @@
                                     <action selector="mainButtonPressed" destination="mGY-cP-LJn" eventType="touchUpInside" id="c2g-1b-6NQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-vj-9M1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-vj-9M1">
                                 <rect key="frame" x="24" y="585.5" width="366" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -108,7 +110,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9Gt-RV-59t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CjP-Nx-Ck4" firstAttribute="top" secondItem="9Gt-RV-59t" secondAttribute="top" id="9fm-qB-066"/>
                             <constraint firstItem="DBb-P2-isE" firstAttribute="leading" secondItem="ehb-vo-x30" secondAttribute="leading" id="9nb-Vp-IPd"/>
@@ -128,7 +131,6 @@
                             <constraint firstItem="ehb-vo-x30" firstAttribute="top" secondItem="SXK-pP-m3D" secondAttribute="bottom" constant="12" id="gaE-d8-YxT"/>
                             <constraint firstItem="9Gt-RV-59t" firstAttribute="trailing" secondItem="CjP-Nx-Ck4" secondAttribute="trailing" id="nkO-vJ-5mi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9Gt-RV-59t"/>
                     </view>
                     <connections>
                         <outlet property="changeStateButton" destination="jrC-vj-9M1" id="L2F-SD-sFe"/>
@@ -179,7 +181,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Us-8O-Yfw" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
-                                <rect key="frame" x="259" y="274" width="135" height="44"/>
+                                <rect key="frame" x="271" y="274" width="123" height="22"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="Продовжити" image="Vector &gt;">
                                     <color key="titleColor" name="themeGreen"/>
@@ -194,7 +196,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pnH-Qb-ecU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pnH-Qb-ecU" firstAttribute="trailing" secondItem="5ql-10-w56" secondAttribute="trailing" constant="20" id="3IW-lM-kfA"/>
                             <constraint firstItem="5ql-10-w56" firstAttribute="top" secondItem="pnH-Qb-ecU" secondAttribute="top" constant="24" id="IuZ-NC-IeB"/>
@@ -208,7 +211,6 @@
                             <constraint firstItem="pnH-Qb-ecU" firstAttribute="trailing" secondItem="3Z9-bk-Lpy" secondAttribute="trailing" constant="20" id="x1O-k2-hjr"/>
                             <constraint firstItem="0Us-8O-Yfw" firstAttribute="top" secondItem="3Z9-bk-Lpy" secondAttribute="bottom" constant="52" id="zP3-re-K3g"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pnH-Qb-ecU"/>
                     </view>
                     <connections>
                         <outlet property="confirmationCodeTextField" destination="3Z9-bk-Lpy" id="3rv-H8-N31"/>
@@ -246,10 +248,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-green" translatesAutoresizingMaskIntoConstraints="NO" id="rfw-TV-B1j">
-                                        <rect key="frame" x="142" y="117.5" width="130" height="98"/>
+                                        <rect key="frame" x="174.5" y="166.5" width="65" height="49"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="zhL-3i-FsJ" firstAttribute="top" secondItem="Dg5-uT-sOC" secondAttribute="bottom" constant="20" id="1UE-6E-CAW"/>
                                     <constraint firstItem="rfw-TV-B1j" firstAttribute="centerX" secondItem="Dg5-uT-sOC" secondAttribute="centerX" id="CB4-ub-FtC"/>
@@ -354,7 +356,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiK-Mh-mkk" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiK-Mh-mkk" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
                                 <rect key="frame" x="136.5" y="525.5" width="141" height="32.5"/>
                                 <state key="normal" title="Забули пін-код?"/>
                                 <userDefinedRuntimeAttributes>
@@ -367,7 +369,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mKU-k6-s8Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HwN-9Y-JNa" firstAttribute="top" secondItem="mKU-k6-s8Y" secondAttribute="top" id="1SS-Tb-yKx"/>
                             <constraint firstItem="csU-UQ-6Id" firstAttribute="centerY" secondItem="m0Q-SF-tlq" secondAttribute="centerY" id="5tB-Hf-ARV"/>
@@ -405,7 +408,6 @@
                             <constraint firstItem="l1F-A5-1g5" firstAttribute="leading" secondItem="mKU-k6-s8Y" secondAttribute="leading" constant="24" id="xRW-YP-Mga"/>
                             <constraint firstItem="vxb-5s-Ip6" firstAttribute="top" secondItem="m0Q-SF-tlq" secondAttribute="bottom" constant="12" id="yhu-Xj-lC1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mKU-k6-s8Y"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="ioK-Jh-56w" id="aZk-EG-eYz"/>
@@ -424,6 +426,35 @@
             <point key="canvasLocation" x="1640.5797101449277" y="158.70535714285714"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0Us-8O-Yfw">
+            <size key="intrinsicContentSize" width="123" height="22"/>
+        </designable>
+        <designable name="3Z9-bk-Lpy">
+            <size key="intrinsicContentSize" width="44" height="18.5"/>
+        </designable>
+        <designable name="DBb-P2-isE">
+            <size key="intrinsicContentSize" width="44" height="18.5"/>
+        </designable>
+        <designable name="Sqq-SN-gJK">
+            <size key="intrinsicContentSize" width="59" height="34"/>
+        </designable>
+        <designable name="f20-zR-HLU">
+            <size key="intrinsicContentSize" width="59" height="34"/>
+        </designable>
+        <designable name="oiK-Mh-mkk">
+            <size key="intrinsicContentSize" width="141" height="32.5"/>
+        </designable>
+        <designable name="toB-Dj-dpf">
+            <size key="intrinsicContentSize" width="56" height="32.5"/>
+        </designable>
+        <designable name="v2N-to-FKJ">
+            <size key="intrinsicContentSize" width="59" height="34"/>
+        </designable>
+        <designable name="vxb-5s-Ip6">
+            <size key="intrinsicContentSize" width="59" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Vector &gt;" width="12" height="22"/>
         <image name="cellphone-icon" width="24" height="24"/>
@@ -445,5 +476,8 @@
         <namedColor name="themeWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
