@@ -1,0 +1,996 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D01B50823A5B6B600D6E45C /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D01B50723A5B6B600D6E45C /* Photo.storyboard */; };
+		3D01B50B23A5B6D500D6E45C /* PhotoGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01B50A23A5B6D500D6E45C /* PhotoGuideViewController.swift */; };
+		3D01B50D23A5BBFC00D6E45C /* KMPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01B50C23A5BBFC00D6E45C /* KMPhotoPickerController.swift */; };
+		3D135A6E23A2DE3F0063C7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D135A6D23A2DE3F0063C7D0 /* AppDelegate.swift */; };
+		3D135A7023A2DE3F0063C7D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D135A6F23A2DE3F0063C7D0 /* SceneDelegate.swift */; };
+		3D135A7223A2DE3F0063C7D0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D135A7123A2DE3F0063C7D0 /* SplashViewController.swift */; };
+		3D135A7523A2DE3F0063C7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D135A7323A2DE3F0063C7D0 /* Main.storyboard */; };
+		3D135A7723A2DE450063C7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D135A7623A2DE450063C7D0 /* Assets.xcassets */; };
+		3D135A7A23A2DE450063C7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D135A7823A2DE450063C7D0 /* LaunchScreen.storyboard */; };
+		3D26F2F823AAD46E00EBDBCD /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D26F2F723AAD46E00EBDBCD /* Common.storyboard */; };
+		3D26F2FB23AAD65100EBDBCD /* KMAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26F2FA23AAD65100EBDBCD /* KMAlertViewController.swift */; };
+		3D2AA72523A55E29003C00AE /* KMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA72423A55E29003C00AE /* KMTextField.swift */; };
+		3D2AA72823A56FD2003C00AE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2AA72723A56FD2003C00AE /* Auth.storyboard */; };
+		3D2AA72B23A57054003C00AE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA72A23A57054003C00AE /* AuthViewController.swift */; };
+		3D2AA72E23A578F5003C00AE /* OffsetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA72D23A578F5003C00AE /* OffsetableViewController.swift */; };
+		3D2AA73023A57931003C00AE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA72F23A57931003C00AE /* UIView.swift */; };
+		3D2AA73323A57975003C00AE /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA73223A57975003C00AE /* BorderedView.swift */; };
+		3D2AA73523A57A1D003C00AE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA73423A57A1D003C00AE /* UIImage.swift */; };
+		3D3B171D23A40BD900657FED /* CollectionViews+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B171C23A40BD900657FED /* CollectionViews+Cells.swift */; };
+		3D3B171F23A40C1500657FED /* UIImage+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B171E23A40C1500657FED /* UIImage+Download.swift */; };
+		3D3B172123A40C6800657FED /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B172023A40C6800657FED /* UIColor.swift */; };
+		3D3B172423A40D9C00657FED /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B172323A40D9C00657FED /* Theme.swift */; };
+		3D3B174623A415AD00657FED /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172823A415AD00657FED /* SF-Pro-Display-Thin.otf */; };
+		3D3B174723A415AD00657FED /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172923A415AD00657FED /* SF-Pro-Display-SemiboldItalic.otf */; };
+		3D3B174823A415AD00657FED /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172A23A415AD00657FED /* SF-Pro-Text-Heavy.otf */; };
+		3D3B174923A415AD00657FED /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172B23A415AD00657FED /* SF-Pro-Display-RegularItalic.otf */; };
+		3D3B174A23A415AD00657FED /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172C23A415AD00657FED /* SF-Pro-Display-Light.otf */; };
+		3D3B174B23A415AD00657FED /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172D23A415AD00657FED /* SF-Pro-Display-Regular.otf */; };
+		3D3B174C23A415AD00657FED /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172E23A415AD00657FED /* SF-Pro-Text-MediumItalic.otf */; };
+		3D3B174D23A415AD00657FED /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B172F23A415AD00657FED /* SF-Pro-Display-Bold.otf */; };
+		3D3B174E23A415AD00657FED /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173023A415AD00657FED /* SF-Pro-Display-Medium.otf */; };
+		3D3B174F23A415AD00657FED /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173123A415AD00657FED /* SF-Pro-Display-Heavy.otf */; };
+		3D3B175023A415AD00657FED /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173223A415AD00657FED /* SF-Pro-Text-Light.otf */; };
+		3D3B175123A415AD00657FED /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173323A415AD00657FED /* SF-Pro-Display-Semibold.otf */; };
+		3D3B175223A415AD00657FED /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173423A415AD00657FED /* SF-Pro-Text-Regular.otf */; };
+		3D3B175323A415AD00657FED /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173523A415AD00657FED /* SF-Pro-Text-Bold.otf */; };
+		3D3B175423A415AD00657FED /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173623A415AD00657FED /* SF-Pro-Display-MediumItalic.otf */; };
+		3D3B175523A415AD00657FED /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173723A415AD00657FED /* SF-Pro-Display-HeavyItalic.otf */; };
+		3D3B175623A415AD00657FED /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173823A415AD00657FED /* SF-Pro-Display-Ultralight.otf */; };
+		3D3B175723A415AD00657FED /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173923A415AD00657FED /* SF-Pro-Display-UltralightItalic.otf */; };
+		3D3B175823A415AD00657FED /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173A23A415AD00657FED /* SF-Pro-Display-LightItalic.otf */; };
+		3D3B175923A415AD00657FED /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173B23A415AD00657FED /* SF-Pro-Display-BlackItalic.otf */; };
+		3D3B175A23A415AD00657FED /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173C23A415AD00657FED /* SF-Pro-Display-Black.otf */; };
+		3D3B175B23A415AD00657FED /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173D23A415AD00657FED /* SF-Pro-Text-BoldItalic.otf */; };
+		3D3B175C23A415AD00657FED /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173E23A415AD00657FED /* SF-Pro-Text-RegularItalic.otf */; };
+		3D3B175D23A415AD00657FED /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B173F23A415AD00657FED /* SF-Pro-Text-Semibold.otf */; };
+		3D3B175E23A415AD00657FED /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174023A415AD00657FED /* SF-Pro-Text-HeavyItalic.otf */; };
+		3D3B175F23A415AD00657FED /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174123A415AD00657FED /* SF-Pro-Display-ThinItalic.otf */; };
+		3D3B176023A415AD00657FED /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174223A415AD00657FED /* SF-Pro-Text-LightItalic.otf */; };
+		3D3B176123A415AD00657FED /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174323A415AD00657FED /* SF-Pro-Text-Medium.otf */; };
+		3D3B176223A415AD00657FED /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174423A415AD00657FED /* SF-Pro-Display-BoldItalic.otf */; };
+		3D3B176323A415AD00657FED /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B174523A415AD00657FED /* SF-Pro-Text-SemiboldItalic.otf */; };
+		3D88DA2D23A41C0B0014B35A /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D88DA2C23A41C0B0014B35A /* Guide.storyboard */; };
+		3DAC740B23A57F0300CEFCBE /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC740A23A57F0300CEFCBE /* UIViewController.swift */; };
+		3DAC740E23A5809C00CEFCBE /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC740D23A5809C00CEFCBE /* Storyboard.swift */; };
+		3DADB5A123AE9D5100BAC7FA /* DefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DADB5A023AE9D5100BAC7FA /* DefaultCell.xib */; };
+		3DADB5A323AEB95D00BAC7FA /* KMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADB5A223AEB95D00BAC7FA /* KMNavigationViewController.swift */; };
+		3DADB5A623AED1EA00BAC7FA /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DADB5A523AED1E900BAC7FA /* UIButton.swift */; };
+		3DC035BD23AC0EB300D68408 /* PinCodeConfirmAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC035BC23AC0EB300D68408 /* PinCodeConfirmAlertViewController.swift */; };
+		3DC035BF23AC1E3B00D68408 /* MetroMapSchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC035BE23AC1E3B00D68408 /* MetroMapSchemeViewController.swift */; };
+		3DC035C123AC26F200D68408 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC035C023AC26F200D68408 /* ImageScrollView.swift */; };
+		52710ADCA142C16FB41E8544 /* Pods_kyiv_metro_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FF2102031D4FF8DBE70CA4 /* Pods_kyiv_metro_ios.framework */; };
+		DE2BE30023ACDBC90032FCB8 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2BE2FF23ACDBC90032FCB8 /* SwitchCell.xib */; };
+		DE2BE30223ACDDAC0032FCB8 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2BE30123ACDDAC0032FCB8 /* ButtonCell.xib */; };
+		DE2BE30423AD0AA00032FCB8 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2BE30323AD0AA00032FCB8 /* CardListCell.xib */; };
+		DE87F27823A564820025C4B0 /* RegisterSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87F27723A564820025C4B0 /* RegisterSuccessViewController.swift */; };
+		DE87F27A23A565C10025C4B0 /* PaymentGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87F27923A565C10025C4B0 /* PaymentGuideViewController.swift */; };
+		DE87F27E23A63B5A0025C4B0 /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87F27D23A63B5A0025C4B0 /* PinCodeViewController.swift */; };
+		DE87F28023A63B700025C4B0 /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE87F27F23A63B700025C4B0 /* PinCode.storyboard */; };
+		DE87F28323A6413C0025C4B0 /* ConfirmationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE87F28223A6413C0025C4B0 /* ConfirmationCodeViewController.swift */; };
+		DEA4FDF923AA661000D5B157 /* EnterPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FDF823AA661000D5B157 /* EnterPinCodeViewController.swift */; };
+		DEA4FDFC23AAAFF800D5B157 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA4FDFB23AAAFF800D5B157 /* Profile.storyboard */; };
+		DEA4FDFF23AAB01A00D5B157 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FDFE23AAB01A00D5B157 /* ProfileViewController.swift */; };
+		DEA4FE0223AAB4A000D5B157 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FE0123AAB4A000D5B157 /* DefaultCell.swift */; };
+		DEA4FE0623AAB60800D5B157 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FE0523AAB60800D5B157 /* SwitchCell.swift */; };
+		DEA4FE0823AAB65100D5B157 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FE0723AAB65100D5B157 /* CardListCell.swift */; };
+		DEA4FE0A23AAB68200D5B157 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4FE0923AAB68200D5B157 /* ButtonCell.swift */; };
+		DEAB3EAF23A4213600B43077 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3EAE23A4213600B43077 /* GuideViewController.swift */; };
+		DEAB3EB323A53E6D00B43077 /* KMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB3EB223A53E6D00B43077 /* KMButton.swift */; };
+		DEC1379C23A7D7CD00EA56FA /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1379B23A7D7CC00EA56FA /* AddCardViewController.swift */; };
+		DEC2E45E23A6882A00E3EE4D /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC2E45D23A6882A00E3EE4D /* Card.storyboard */; };
+		DEC2E46123A6885600E3EE4D /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2E46023A6885600E3EE4D /* CardsViewController.swift */; };
+		DEC2E46323A68D4900E3EE4D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC2E46223A68D4900E3EE4D /* CardCell.swift */; };
+		DEC2E46623A6991400E3EE4D /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC2E46523A6991400E3EE4D /* CardCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D01B50723A5B6B600D6E45C /* Photo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
+		3D01B50A23A5B6D500D6E45C /* PhotoGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGuideViewController.swift; sourceTree = "<group>"; };
+		3D01B50C23A5BBFC00D6E45C /* KMPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPhotoPickerController.swift; sourceTree = "<group>"; };
+		3D135A6A23A2DE3F0063C7D0 /* kyiv-metro-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kyiv-metro-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D135A6D23A2DE3F0063C7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D135A6F23A2DE3F0063C7D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D135A7123A2DE3F0063C7D0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3D135A7423A2DE3F0063C7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D135A7623A2DE450063C7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D135A7923A2DE450063C7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D135A7B23A2DE450063C7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D26F2F723AAD46E00EBDBCD /* Common.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Common.storyboard; sourceTree = "<group>"; };
+		3D26F2FA23AAD65100EBDBCD /* KMAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMAlertViewController.swift; sourceTree = "<group>"; };
+		3D2AA72423A55E29003C00AE /* KMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMTextField.swift; sourceTree = "<group>"; };
+		3D2AA72723A56FD2003C00AE /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		3D2AA72A23A57054003C00AE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		3D2AA72D23A578F5003C00AE /* OffsetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetableViewController.swift; sourceTree = "<group>"; };
+		3D2AA72F23A57931003C00AE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3D2AA73223A57975003C00AE /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		3D2AA73423A57A1D003C00AE /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		3D3B171C23A40BD900657FED /* CollectionViews+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViews+Cells.swift"; sourceTree = "<group>"; };
+		3D3B171E23A40C1500657FED /* UIImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Download.swift"; sourceTree = "<group>"; };
+		3D3B172023A40C6800657FED /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3D3B172323A40D9C00657FED /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3D3B172823A415AD00657FED /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		3D3B172923A415AD00657FED /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		3D3B172A23A415AD00657FED /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		3D3B172B23A415AD00657FED /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		3D3B172C23A415AD00657FED /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		3D3B172D23A415AD00657FED /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		3D3B172E23A415AD00657FED /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		3D3B172F23A415AD00657FED /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		3D3B173023A415AD00657FED /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		3D3B173123A415AD00657FED /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		3D3B173223A415AD00657FED /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		3D3B173323A415AD00657FED /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		3D3B173423A415AD00657FED /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		3D3B173523A415AD00657FED /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		3D3B173623A415AD00657FED /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		3D3B173723A415AD00657FED /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		3D3B173823A415AD00657FED /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		3D3B173923A415AD00657FED /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		3D3B173A23A415AD00657FED /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		3D3B173B23A415AD00657FED /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		3D3B173C23A415AD00657FED /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		3D3B173D23A415AD00657FED /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		3D3B173E23A415AD00657FED /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		3D3B173F23A415AD00657FED /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		3D3B174023A415AD00657FED /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		3D3B174123A415AD00657FED /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		3D3B174223A415AD00657FED /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		3D3B174323A415AD00657FED /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		3D3B174423A415AD00657FED /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		3D3B174523A415AD00657FED /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		3D88DA2C23A41C0B0014B35A /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		3DAC740A23A57F0300CEFCBE /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3DAC740D23A5809C00CEFCBE /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		3DADB5A023AE9D5100BAC7FA /* DefaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCell.xib; sourceTree = "<group>"; };
+		3DADB5A223AEB95D00BAC7FA /* KMNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMNavigationViewController.swift; sourceTree = "<group>"; };
+		3DADB5A523AED1E900BAC7FA /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		3DC035BC23AC0EB300D68408 /* PinCodeConfirmAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeConfirmAlertViewController.swift; sourceTree = "<group>"; };
+		3DC035BE23AC1E3B00D68408 /* MetroMapSchemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroMapSchemeViewController.swift; sourceTree = "<group>"; };
+		3DC035C023AC26F200D68408 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		42FF2102031D4FF8DBE70CA4 /* Pods_kyiv_metro_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyiv_metro_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7A48F1F51FA59827589495 /* Pods-kyiv-metro-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyiv-metro-ios.release.xcconfig"; path = "Target Support Files/Pods-kyiv-metro-ios/Pods-kyiv-metro-ios.release.xcconfig"; sourceTree = "<group>"; };
+		C7F58DB0F09E5CC445EA9A4C /* Pods-kyiv-metro-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyiv-metro-ios.debug.xcconfig"; path = "Target Support Files/Pods-kyiv-metro-ios/Pods-kyiv-metro-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DE2BE2FF23ACDBC90032FCB8 /* SwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		DE2BE30123ACDDAC0032FCB8 /* ButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		DE2BE30323AD0AA00032FCB8 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		DE87F27723A564820025C4B0 /* RegisterSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessViewController.swift; sourceTree = "<group>"; };
+		DE87F27923A565C10025C4B0 /* PaymentGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentGuideViewController.swift; sourceTree = "<group>"; };
+		DE87F27D23A63B5A0025C4B0 /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		DE87F27F23A63B700025C4B0 /* PinCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
+		DE87F28223A6413C0025C4B0 /* ConfirmationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCodeViewController.swift; sourceTree = "<group>"; };
+		DEA4FDF823AA661000D5B157 /* EnterPinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPinCodeViewController.swift; sourceTree = "<group>"; };
+		DEA4FDFB23AAAFF800D5B157 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		DEA4FDFE23AAB01A00D5B157 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DEA4FE0123AAB4A000D5B157 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		DEA4FE0523AAB60800D5B157 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		DEA4FE0723AAB65100D5B157 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		DEA4FE0923AAB68200D5B157 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		DEAB3EAE23A4213600B43077 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		DEAB3EB223A53E6D00B43077 /* KMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMButton.swift; sourceTree = "<group>"; };
+		DEC1379B23A7D7CC00EA56FA /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		DEC2E45D23A6882A00E3EE4D /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		DEC2E46023A6885600E3EE4D /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		DEC2E46223A68D4900E3EE4D /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		DEC2E46523A6991400E3EE4D /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D135A6723A2DE3F0063C7D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52710ADCA142C16FB41E8544 /* Pods_kyiv_metro_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D01B50623A5B68600D6E45C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3D01B50723A5B6B600D6E45C /* Photo.storyboard */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		3D01B50923A5B6BD00D6E45C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				3D01B50A23A5B6D500D6E45C /* PhotoGuideViewController.swift */,
+				3D01B50C23A5BBFC00D6E45C /* KMPhotoPickerController.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		3D135A6123A2DE3F0063C7D0 = {
+			isa = PBXGroup;
+			children = (
+				3D135A6C23A2DE3F0063C7D0 /* kyiv-metro-ios */,
+				3D135A6B23A2DE3F0063C7D0 /* Products */,
+				76D8DEEA66EDC6E2A8441383 /* Pods */,
+				902D5CED02C103B71B8EE799 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D135A6B23A2DE3F0063C7D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D135A6A23A2DE3F0063C7D0 /* kyiv-metro-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D135A6C23A2DE3F0063C7D0 /* kyiv-metro-ios */ = {
+			isa = PBXGroup;
+			children = (
+				3DAC740C23A5808C00CEFCBE /* Helpers */,
+				3D88DA2723A41B9F0014B35A /* UI */,
+				3D3B172523A4159000657FED /* Resources */,
+				3D3B172223A40D3100657FED /* Theme */,
+				3D3B171B23A40B9200657FED /* Extension */,
+				3D135A6D23A2DE3F0063C7D0 /* AppDelegate.swift */,
+				3D135A6F23A2DE3F0063C7D0 /* SceneDelegate.swift */,
+				3D135A7123A2DE3F0063C7D0 /* SplashViewController.swift */,
+				3D135A7323A2DE3F0063C7D0 /* Main.storyboard */,
+				3D135A7623A2DE450063C7D0 /* Assets.xcassets */,
+				3D135A7823A2DE450063C7D0 /* LaunchScreen.storyboard */,
+				3D135A7B23A2DE450063C7D0 /* Info.plist */,
+			);
+			path = "kyiv-metro-ios";
+			sourceTree = "<group>";
+		};
+		3D26F2F523AAD3CB00EBDBCD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D26F2FA23AAD65100EBDBCD /* KMAlertViewController.swift */,
+				3DC035BC23AC0EB300D68408 /* PinCodeConfirmAlertViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D26F2F623AAD3D300EBDBCD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D26F2F723AAD46E00EBDBCD /* Common.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3D2AA72323A55E15003C00AE /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA72423A55E29003C00AE /* KMTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		3D2AA72623A56FD2003C00AE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA72723A56FD2003C00AE /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3D2AA72923A5704B003C00AE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA72A23A57054003C00AE /* AuthViewController.swift */,
+				DEA4FDF823AA661000D5B157 /* EnterPinCodeViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3D2AA72C23A578E6003C00AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA72D23A578F5003C00AE /* OffsetableViewController.swift */,
+				3DADB5A223AEB95D00BAC7FA /* KMNavigationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D2AA73123A5796A003C00AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA73223A57975003C00AE /* BorderedView.swift */,
+				3DC035C023AC26F200D68408 /* ImageScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D3B171B23A40B9200657FED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B171C23A40BD900657FED /* CollectionViews+Cells.swift */,
+				3D3B171E23A40C1500657FED /* UIImage+Download.swift */,
+				3D3B172023A40C6800657FED /* UIColor.swift */,
+				3D2AA72F23A57931003C00AE /* UIView.swift */,
+				3D2AA73423A57A1D003C00AE /* UIImage.swift */,
+				3DADB5A523AED1E900BAC7FA /* UIButton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D3B172223A40D3100657FED /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B172323A40D9C00657FED /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		3D3B172523A4159000657FED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B172623A415AD00657FED /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D3B172623A415AD00657FED /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B172723A415AD00657FED /* SF Pro */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		3D3B172723A415AD00657FED /* SF Pro */ = {
+			isa = PBXGroup;
+			children = (
+				3D3B172823A415AD00657FED /* SF-Pro-Display-Thin.otf */,
+				3D3B172923A415AD00657FED /* SF-Pro-Display-SemiboldItalic.otf */,
+				3D3B172A23A415AD00657FED /* SF-Pro-Text-Heavy.otf */,
+				3D3B172B23A415AD00657FED /* SF-Pro-Display-RegularItalic.otf */,
+				3D3B172C23A415AD00657FED /* SF-Pro-Display-Light.otf */,
+				3D3B172D23A415AD00657FED /* SF-Pro-Display-Regular.otf */,
+				3D3B172E23A415AD00657FED /* SF-Pro-Text-MediumItalic.otf */,
+				3D3B172F23A415AD00657FED /* SF-Pro-Display-Bold.otf */,
+				3D3B173023A415AD00657FED /* SF-Pro-Display-Medium.otf */,
+				3D3B173123A415AD00657FED /* SF-Pro-Display-Heavy.otf */,
+				3D3B173223A415AD00657FED /* SF-Pro-Text-Light.otf */,
+				3D3B173323A415AD00657FED /* SF-Pro-Display-Semibold.otf */,
+				3D3B173423A415AD00657FED /* SF-Pro-Text-Regular.otf */,
+				3D3B173523A415AD00657FED /* SF-Pro-Text-Bold.otf */,
+				3D3B173623A415AD00657FED /* SF-Pro-Display-MediumItalic.otf */,
+				3D3B173723A415AD00657FED /* SF-Pro-Display-HeavyItalic.otf */,
+				3D3B173823A415AD00657FED /* SF-Pro-Display-Ultralight.otf */,
+				3D3B173923A415AD00657FED /* SF-Pro-Display-UltralightItalic.otf */,
+				3D3B173A23A415AD00657FED /* SF-Pro-Display-LightItalic.otf */,
+				3D3B173B23A415AD00657FED /* SF-Pro-Display-BlackItalic.otf */,
+				3D3B173C23A415AD00657FED /* SF-Pro-Display-Black.otf */,
+				3D3B173D23A415AD00657FED /* SF-Pro-Text-BoldItalic.otf */,
+				3D3B173E23A415AD00657FED /* SF-Pro-Text-RegularItalic.otf */,
+				3D3B173F23A415AD00657FED /* SF-Pro-Text-Semibold.otf */,
+				3D3B174023A415AD00657FED /* SF-Pro-Text-HeavyItalic.otf */,
+				3D3B174123A415AD00657FED /* SF-Pro-Display-ThinItalic.otf */,
+				3D3B174223A415AD00657FED /* SF-Pro-Text-LightItalic.otf */,
+				3D3B174323A415AD00657FED /* SF-Pro-Text-Medium.otf */,
+				3D3B174423A415AD00657FED /* SF-Pro-Display-BoldItalic.otf */,
+				3D3B174523A415AD00657FED /* SF-Pro-Text-SemiboldItalic.otf */,
+			);
+			path = "SF Pro";
+			sourceTree = "<group>";
+		};
+		3D88DA2723A41B9F0014B35A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3EB023A53DF500B43077 /* Base */,
+				3D88DA2923A41BBF0014B35A /* Storyboards */,
+				3D88DA2823A41BA70014B35A /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3D88DA2823A41BA70014B35A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4FDFD23AAB00100D5B157 /* Profile */,
+				3D26F2F523AAD3CB00EBDBCD /* Common */,
+				DEC2E45F23A6884000E3EE4D /* Cards */,
+				DE87F28123A6411F0025C4B0 /* ConfirmationCode */,
+				DE87F27C23A63AFA0025C4B0 /* PinCode */,
+				3D01B50923A5B6BD00D6E45C /* Photo */,
+				3D2AA72923A5704B003C00AE /* Auth */,
+				3D88DA2A23A41BCA0014B35A /* Guide */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D88DA2923A41BBF0014B35A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4FDFA23AAAFB900D5B157 /* Profile */,
+				3D26F2F623AAD3D300EBDBCD /* Common */,
+				DEC2E45C23A6880600E3EE4D /* Cards */,
+				DE87F27B23A63AE50025C4B0 /* PinCode */,
+				3D01B50623A5B68600D6E45C /* Photo */,
+				3D2AA72623A56FD2003C00AE /* Auth */,
+				3D88DA2B23A41BF80014B35A /* Guide */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D88DA2A23A41BCA0014B35A /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				DE87F27723A564820025C4B0 /* RegisterSuccessViewController.swift */,
+				DE87F27923A565C10025C4B0 /* PaymentGuideViewController.swift */,
+				DEAB3EAE23A4213600B43077 /* GuideViewController.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		3D88DA2B23A41BF80014B35A /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				3D88DA2C23A41C0B0014B35A /* Guide.storyboard */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		3DAC740C23A5808C00CEFCBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DAC740F23A5846D00CEFCBE /* Storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DAC740F23A5846D00CEFCBE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3DAC740A23A57F0300CEFCBE /* UIViewController.swift */,
+				3DAC740D23A5809C00CEFCBE /* Storyboard.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		76D8DEEA66EDC6E2A8441383 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7F58DB0F09E5CC445EA9A4C /* Pods-kyiv-metro-ios.debug.xcconfig */,
+				AA7A48F1F51FA59827589495 /* Pods-kyiv-metro-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		902D5CED02C103B71B8EE799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42FF2102031D4FF8DBE70CA4 /* Pods_kyiv_metro_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE87F27B23A63AE50025C4B0 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				DE87F27F23A63B700025C4B0 /* PinCode.storyboard */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		DE87F27C23A63AFA0025C4B0 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				DE87F27D23A63B5A0025C4B0 /* PinCodeViewController.swift */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		DE87F28123A6411F0025C4B0 /* ConfirmationCode */ = {
+			isa = PBXGroup;
+			children = (
+				DE87F28223A6413C0025C4B0 /* ConfirmationCodeViewController.swift */,
+			);
+			path = ConfirmationCode;
+			sourceTree = "<group>";
+		};
+		DEA4FDFA23AAAFB900D5B157 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4FDFB23AAAFF800D5B157 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DEA4FDFD23AAB00100D5B157 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4FE0023AAB43C00D5B157 /* ProfileCells */,
+				DEA4FDFE23AAB01A00D5B157 /* ProfileViewController.swift */,
+				3DC035BE23AC1E3B00D68408 /* MetroMapSchemeViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DEA4FE0023AAB43C00D5B157 /* ProfileCells */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4FE0123AAB4A000D5B157 /* DefaultCell.swift */,
+				DEA4FE0523AAB60800D5B157 /* SwitchCell.swift */,
+				DE2BE2FF23ACDBC90032FCB8 /* SwitchCell.xib */,
+				DEA4FE0723AAB65100D5B157 /* CardListCell.swift */,
+				DE2BE30323AD0AA00032FCB8 /* CardListCell.xib */,
+				DEA4FE0923AAB68200D5B157 /* ButtonCell.swift */,
+				DE2BE30123ACDDAC0032FCB8 /* ButtonCell.xib */,
+				3DADB5A023AE9D5100BAC7FA /* DefaultCell.xib */,
+			);
+			path = ProfileCells;
+			sourceTree = "<group>";
+		};
+		DEAB3EB023A53DF500B43077 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA73123A5796A003C00AE /* View */,
+				3D2AA72C23A578E6003C00AE /* Controllers */,
+				3D2AA72323A55E15003C00AE /* TextFields */,
+				DEAB3EB123A53E1900B43077 /* Buttons */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DEAB3EB123A53E1900B43077 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				DEAB3EB223A53E6D00B43077 /* KMButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		DEC2E45C23A6880600E3EE4D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2E45D23A6882A00E3EE4D /* Card.storyboard */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		DEC2E45F23A6884000E3EE4D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2E46423A698C600E3EE4D /* CardCell */,
+				DEC2E46023A6885600E3EE4D /* CardsViewController.swift */,
+				DEC1379B23A7D7CC00EA56FA /* AddCardViewController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		DEC2E46423A698C600E3EE4D /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEC2E46223A68D4900E3EE4D /* CardCell.swift */,
+				DEC2E46523A6991400E3EE4D /* CardCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D135A6923A2DE3F0063C7D0 /* kyiv-metro-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D135A7E23A2DE450063C7D0 /* Build configuration list for PBXNativeTarget "kyiv-metro-ios" */;
+			buildPhases = (
+				769C61491539A270E0F0DAD4 /* [CP] Check Pods Manifest.lock */,
+				3D135A6623A2DE3F0063C7D0 /* Sources */,
+				3D135A6723A2DE3F0063C7D0 /* Frameworks */,
+				3D135A6823A2DE3F0063C7D0 /* Resources */,
+				C55C9F5D64A56FA0506C10A3 /* [CP] Embed Pods Frameworks */,
+				DE3EF54823A2EDA3002C09D7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kyiv-metro-ios";
+			productName = "kyiv-metro-ios";
+			productReference = 3D135A6A23A2DE3F0063C7D0 /* kyiv-metro-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D135A6223A2DE3F0063C7D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Movadex;
+				TargetAttributes = {
+					3D135A6923A2DE3F0063C7D0 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D135A6523A2DE3F0063C7D0 /* Build configuration list for PBXProject "kyiv-metro-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D135A6123A2DE3F0063C7D0;
+			productRefGroup = 3D135A6B23A2DE3F0063C7D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D135A6923A2DE3F0063C7D0 /* kyiv-metro-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D135A6823A2DE3F0063C7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3B175723A415AD00657FED /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				3D88DA2D23A41C0B0014B35A /* Guide.storyboard in Resources */,
+				DEA4FDFC23AAAFF800D5B157 /* Profile.storyboard in Resources */,
+				3D3B174E23A415AD00657FED /* SF-Pro-Display-Medium.otf in Resources */,
+				3D3B175C23A415AD00657FED /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				DE2BE30023ACDBC90032FCB8 /* SwitchCell.xib in Resources */,
+				3D3B174C23A415AD00657FED /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				3D3B175B23A415AD00657FED /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				3D3B174623A415AD00657FED /* SF-Pro-Display-Thin.otf in Resources */,
+				DEC2E46623A6991400E3EE4D /* CardCell.xib in Resources */,
+				DE2BE30423AD0AA00032FCB8 /* CardListCell.xib in Resources */,
+				3D3B175D23A415AD00657FED /* SF-Pro-Text-Semibold.otf in Resources */,
+				3D3B174823A415AD00657FED /* SF-Pro-Text-Heavy.otf in Resources */,
+				3D3B175523A415AD00657FED /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				3D3B175423A415AD00657FED /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				3D3B176023A415AD00657FED /* SF-Pro-Text-LightItalic.otf in Resources */,
+				3D3B174923A415AD00657FED /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				3D3B175E23A415AD00657FED /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				3D3B176123A415AD00657FED /* SF-Pro-Text-Medium.otf in Resources */,
+				3D3B175823A415AD00657FED /* SF-Pro-Display-LightItalic.otf in Resources */,
+				3D3B175923A415AD00657FED /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				3D3B175623A415AD00657FED /* SF-Pro-Display-Ultralight.otf in Resources */,
+				3D3B175A23A415AD00657FED /* SF-Pro-Display-Black.otf in Resources */,
+				3D3B176223A415AD00657FED /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				3D3B176323A415AD00657FED /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				3DADB5A123AE9D5100BAC7FA /* DefaultCell.xib in Resources */,
+				3D135A7A23A2DE450063C7D0 /* LaunchScreen.storyboard in Resources */,
+				3D3B175223A415AD00657FED /* SF-Pro-Text-Regular.otf in Resources */,
+				3D135A7723A2DE450063C7D0 /* Assets.xcassets in Resources */,
+				3D3B174F23A415AD00657FED /* SF-Pro-Display-Heavy.otf in Resources */,
+				3D3B175323A415AD00657FED /* SF-Pro-Text-Bold.otf in Resources */,
+				DEC2E45E23A6882A00E3EE4D /* Card.storyboard in Resources */,
+				3D135A7523A2DE3F0063C7D0 /* Main.storyboard in Resources */,
+				DE87F28023A63B700025C4B0 /* PinCode.storyboard in Resources */,
+				3D2AA72823A56FD2003C00AE /* Auth.storyboard in Resources */,
+				3D3B174A23A415AD00657FED /* SF-Pro-Display-Light.otf in Resources */,
+				3D01B50823A5B6B600D6E45C /* Photo.storyboard in Resources */,
+				3D26F2F823AAD46E00EBDBCD /* Common.storyboard in Resources */,
+				3D3B174B23A415AD00657FED /* SF-Pro-Display-Regular.otf in Resources */,
+				3D3B174723A415AD00657FED /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				3D3B175123A415AD00657FED /* SF-Pro-Display-Semibold.otf in Resources */,
+				3D3B175023A415AD00657FED /* SF-Pro-Text-Light.otf in Resources */,
+				DE2BE30223ACDDAC0032FCB8 /* ButtonCell.xib in Resources */,
+				3D3B175F23A415AD00657FED /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				3D3B174D23A415AD00657FED /* SF-Pro-Display-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		769C61491539A270E0F0DAD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyiv-metro-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55C9F5D64A56FA0506C10A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kyiv-metro-ios/Pods-kyiv-metro-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kyiv-metro-ios/Pods-kyiv-metro-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kyiv-metro-ios/Pods-kyiv-metro-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3EF54823A2EDA3002C09D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D135A6623A2DE3F0063C7D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE87F27A23A565C10025C4B0 /* PaymentGuideViewController.swift in Sources */,
+				DE87F27823A564820025C4B0 /* RegisterSuccessViewController.swift in Sources */,
+				3D135A7223A2DE3F0063C7D0 /* SplashViewController.swift in Sources */,
+				DEA4FDF923AA661000D5B157 /* EnterPinCodeViewController.swift in Sources */,
+				3D2AA73023A57931003C00AE /* UIView.swift in Sources */,
+				3D2AA73323A57975003C00AE /* BorderedView.swift in Sources */,
+				3D26F2FB23AAD65100EBDBCD /* KMAlertViewController.swift in Sources */,
+				3D01B50B23A5B6D500D6E45C /* PhotoGuideViewController.swift in Sources */,
+				3D2AA72B23A57054003C00AE /* AuthViewController.swift in Sources */,
+				3DAC740E23A5809C00CEFCBE /* Storyboard.swift in Sources */,
+				3D135A7223A2DE3F0063C7D0 /* SplashViewController.swift in Sources */,
+				3D01B50D23A5BBFC00D6E45C /* KMPhotoPickerController.swift in Sources */,
+				DEAB3EAF23A4213600B43077 /* GuideViewController.swift in Sources */,
+				DEC1379C23A7D7CD00EA56FA /* AddCardViewController.swift in Sources */,
+				3DADB5A623AED1EA00BAC7FA /* UIButton.swift in Sources */,
+				DEA4FDFF23AAB01A00D5B157 /* ProfileViewController.swift in Sources */,
+				DEAB3EB323A53E6D00B43077 /* KMButton.swift in Sources */,
+				3D2AA73523A57A1D003C00AE /* UIImage.swift in Sources */,
+				3D3B172123A40C6800657FED /* UIColor.swift in Sources */,
+				3D135A6E23A2DE3F0063C7D0 /* AppDelegate.swift in Sources */,
+				3D3B171D23A40BD900657FED /* CollectionViews+Cells.swift in Sources */,
+				3D2AA72E23A578F5003C00AE /* OffsetableViewController.swift in Sources */,
+				DEA4FE0823AAB65100D5B157 /* CardListCell.swift in Sources */,
+				DEA4FE0623AAB60800D5B157 /* SwitchCell.swift in Sources */,
+				DEA4FE0223AAB4A000D5B157 /* DefaultCell.swift in Sources */,
+				3DC035BD23AC0EB300D68408 /* PinCodeConfirmAlertViewController.swift in Sources */,
+				DEC2E46323A68D4900E3EE4D /* CardCell.swift in Sources */,
+				3D135A7023A2DE3F0063C7D0 /* SceneDelegate.swift in Sources */,
+				3D2AA72523A55E29003C00AE /* KMTextField.swift in Sources */,
+				DEA4FE0A23AAB68200D5B157 /* ButtonCell.swift in Sources */,
+				3D3B171F23A40C1500657FED /* UIImage+Download.swift in Sources */,
+				3DADB5A323AEB95D00BAC7FA /* KMNavigationViewController.swift in Sources */,
+				DE87F28323A6413C0025C4B0 /* ConfirmationCodeViewController.swift in Sources */,
+				DEC2E46123A6885600E3EE4D /* CardsViewController.swift in Sources */,
+				DE87F27E23A63B5A0025C4B0 /* PinCodeViewController.swift in Sources */,
+				3DAC740B23A57F0300CEFCBE /* UIViewController.swift in Sources */,
+				3DC035C123AC26F200D68408 /* ImageScrollView.swift in Sources */,
+				3D3B172423A40D9C00657FED /* Theme.swift in Sources */,
+				3DC035BF23AC1E3B00D68408 /* MetroMapSchemeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D135A7323A2DE3F0063C7D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D135A7423A2DE3F0063C7D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D135A7823A2DE450063C7D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D135A7923A2DE450063C7D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D135A7C23A2DE450063C7D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D135A7D23A2DE450063C7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D135A7F23A2DE450063C7D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F58DB0F09E5CC445EA9A4C /* Pods-kyiv-metro-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2UR6Y3A9;
+				INFOPLIST_FILE = "kyiv-metro-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Movadex.kyiv-metro-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D135A8023A2DE450063C7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7A48F1F51FA59827589495 /* Pods-kyiv-metro-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V2UR6Y3A9;
+				INFOPLIST_FILE = "kyiv-metro-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Movadex.kyiv-metro-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D135A6523A2DE3F0063C7D0 /* Build configuration list for PBXProject "kyiv-metro-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D135A7C23A2DE450063C7D0 /* Debug */,
+				3D135A7D23A2DE450063C7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D135A7E23A2DE450063C7D0 /* Build configuration list for PBXNativeTarget "kyiv-metro-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D135A7F23A2DE450063C7D0 /* Debug */,
+				3D135A8023A2DE450063C7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D135A6223A2DE3F0063C7D0 /* Project object */;
+}

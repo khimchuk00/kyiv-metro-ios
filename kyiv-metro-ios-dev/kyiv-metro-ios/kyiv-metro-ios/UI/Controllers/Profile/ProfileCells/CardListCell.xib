@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardListCell" rowHeight="152" id="QTM-4h-iwl" customClass="CardListCell" customModule="kyiv_metro_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QTM-4h-iwl" id="e4x-2S-GFv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Платіжні карти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTr-zY-HiD">
+                        <rect key="frame" x="16" y="16" width="342" height="20"/>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                        <color key="textColor" name="themeBlack"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vjP-K6-4rI">
+                        <rect key="frame" x="16" y="52" width="42" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="PVy-dJ-Cen"/>
+                            <constraint firstAttribute="width" constant="42" id="VSc-Eb-ivk"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaI-dW-nch">
+                        <rect key="frame" x="374" y="2" width="24" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="5aA-YR-lOV"/>
+                        </constraints>
+                        <state key="normal" image="editButton"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ4-Od-5J3">
+                        <rect key="frame" x="74" y="57.5" width="324" height="20"/>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                        <color key="textColor" name="themeDarkGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sTr-zY-HiD" firstAttribute="leading" secondItem="e4x-2S-GFv" secondAttribute="leading" constant="16" id="2FS-Nz-226"/>
+                    <constraint firstItem="gQ4-Od-5J3" firstAttribute="trailing" secondItem="ZaI-dW-nch" secondAttribute="trailing" id="D2e-WE-Tr5"/>
+                    <constraint firstItem="sTr-zY-HiD" firstAttribute="top" secondItem="e4x-2S-GFv" secondAttribute="top" constant="16" id="EPV-wJ-KHP"/>
+                    <constraint firstItem="ZaI-dW-nch" firstAttribute="centerY" secondItem="sTr-zY-HiD" secondAttribute="centerY" id="ULI-4e-ccd"/>
+                    <constraint firstItem="gQ4-Od-5J3" firstAttribute="leading" secondItem="vjP-K6-4rI" secondAttribute="trailing" constant="16" id="Uo4-pe-kOd"/>
+                    <constraint firstItem="vjP-K6-4rI" firstAttribute="leading" secondItem="sTr-zY-HiD" secondAttribute="leading" id="dya-27-gR9"/>
+                    <constraint firstItem="vjP-K6-4rI" firstAttribute="top" secondItem="sTr-zY-HiD" secondAttribute="bottom" constant="16" id="fbv-cl-Hna"/>
+                    <constraint firstAttribute="trailing" secondItem="ZaI-dW-nch" secondAttribute="trailing" constant="16" id="lZ1-ao-FC9"/>
+                    <constraint firstItem="gQ4-Od-5J3" firstAttribute="centerY" secondItem="vjP-K6-4rI" secondAttribute="centerY" id="ooz-tv-s7j"/>
+                    <constraint firstItem="ZaI-dW-nch" firstAttribute="leading" secondItem="sTr-zY-HiD" secondAttribute="trailing" constant="16" id="osY-Vd-c89"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardTypeImage" destination="vjP-K6-4rI" id="kNo-JR-aIS"/>
+                <outlet property="cellCardNumber" destination="gQ4-Od-5J3" id="hhv-C9-9cb"/>
+                <outlet property="cellTitle" destination="sTr-zY-HiD" id="XUl-U9-q6s"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="189.50892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="editButton" width="24" height="24"/>
+        <namedColor name="themeBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeDarkGray">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

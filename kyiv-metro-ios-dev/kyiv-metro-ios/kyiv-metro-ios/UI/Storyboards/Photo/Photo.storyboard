@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khh-RP-q3R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Photo Guide View Controller-->
+        <scene sceneID="b5Q-kH-S2Q">
+            <objects>
+                <viewController storyboardIdentifier="PhotoGuideViewController" id="Khh-RP-q3R" customClass="PhotoGuideViewController" customModule="kyiv_metro_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Xq-el-4f1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Додати фото" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFC-q9-UHE">
+                                <rect key="frame" x="16" y="68" width="382" height="30"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Будь ласка додайте фото для подальшого розпізнавання та користування системою" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFX-fg-W6t">
+                                <rect key="frame" x="16" y="106" width="382" height="41"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="themeDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для цього наведіть ваше обличчя у рамку як наведено нижче та зробіть фото" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f62-cl-AHT">
+                                <rect key="frame" x="16" y="171" width="382" height="41"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="themeDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Система розпізнавання розроблена Riddletag" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdB-GW-ait">
+                                <rect key="frame" x="16" y="244" width="382" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                <color key="textColor" name="themeDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-guide" translatesAutoresizingMaskIntoConstraints="NO" id="79d-4v-cFP">
+                                <rect key="frame" x="16" y="265.5" width="382" height="398.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="79d-4v-cFP" secondAttribute="height" multiplier="343:358" id="jwf-o9-ON3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js0-El-e34" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
+                                <rect key="frame" x="250.5" y="692" width="138.5" height="23"/>
+                                <state key="normal" title="Зробити фото " image="arrow-left"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="takePhotoPressed" destination="Khh-RP-q3R" eventType="touchUpInside" id="Te7-Ub-ON1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="79d-4v-cFP" firstAttribute="leading" secondItem="q3c-DJ-KUk" secondAttribute="leading" constant="16" id="1lY-Ua-nhL"/>
+                            <constraint firstItem="nFC-q9-UHE" firstAttribute="leading" secondItem="q3c-DJ-KUk" secondAttribute="leading" constant="16" id="4Ed-rS-lhf"/>
+                            <constraint firstItem="AdB-GW-ait" firstAttribute="trailing" secondItem="f62-cl-AHT" secondAttribute="trailing" id="8mc-zS-cNX"/>
+                            <constraint firstItem="nFC-q9-UHE" firstAttribute="top" secondItem="q3c-DJ-KUk" secondAttribute="top" constant="24" id="M7P-aG-Y75"/>
+                            <constraint firstItem="pFX-fg-W6t" firstAttribute="trailing" secondItem="nFC-q9-UHE" secondAttribute="trailing" id="PZf-Sp-s70"/>
+                            <constraint firstItem="q3c-DJ-KUk" firstAttribute="trailing" secondItem="79d-4v-cFP" secondAttribute="trailing" constant="16" id="QE7-D0-lM3"/>
+                            <constraint firstItem="AdB-GW-ait" firstAttribute="leading" secondItem="f62-cl-AHT" secondAttribute="leading" id="RQ5-xj-onQ"/>
+                            <constraint firstItem="79d-4v-cFP" firstAttribute="top" secondItem="AdB-GW-ait" secondAttribute="bottom" constant="8" id="aql-3z-cSt"/>
+                            <constraint firstItem="q3c-DJ-KUk" firstAttribute="trailing" secondItem="js0-El-e34" secondAttribute="trailing" constant="25" id="ayT-Vh-Rg2"/>
+                            <constraint firstItem="f62-cl-AHT" firstAttribute="top" secondItem="pFX-fg-W6t" secondAttribute="bottom" constant="24" id="fZB-xM-Imx"/>
+                            <constraint firstItem="pFX-fg-W6t" firstAttribute="leading" secondItem="nFC-q9-UHE" secondAttribute="leading" id="iWl-n0-eRQ"/>
+                            <constraint firstItem="q3c-DJ-KUk" firstAttribute="trailing" secondItem="nFC-q9-UHE" secondAttribute="trailing" constant="16" id="kgX-RE-uHn"/>
+                            <constraint firstItem="pFX-fg-W6t" firstAttribute="top" secondItem="nFC-q9-UHE" secondAttribute="bottom" constant="8" id="pgn-gM-yes"/>
+                            <constraint firstItem="js0-El-e34" firstAttribute="top" secondItem="79d-4v-cFP" secondAttribute="bottom" constant="28" id="s0j-e6-3Y6"/>
+                            <constraint firstItem="f62-cl-AHT" firstAttribute="trailing" secondItem="pFX-fg-W6t" secondAttribute="trailing" id="tSx-TI-7Fh"/>
+                            <constraint firstItem="AdB-GW-ait" firstAttribute="top" secondItem="f62-cl-AHT" secondAttribute="bottom" constant="32" id="vAO-Fp-28i"/>
+                            <constraint firstItem="f62-cl-AHT" firstAttribute="leading" secondItem="pFX-fg-W6t" secondAttribute="leading" id="viD-S6-H3q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q3c-DJ-KUk"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyLabel" destination="AdB-GW-ait" id="76E-7R-vnF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4O-Za-LCO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-left" width="12.5" height="23"/>
+        <image name="photo-guide" width="343" height="358"/>
+        <namedColor name="themeDarkGray">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

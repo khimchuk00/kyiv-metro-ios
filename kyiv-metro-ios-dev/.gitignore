@@ -1,0 +1,12 @@
+Pods/
+
+# Mac OS X Finder
+.DS_Store
+
+# Xcode
+xcuserdata/
+kyiv-metro-ios.xcworkspace/
+DerivedData/
+
+Podfile.lock
+

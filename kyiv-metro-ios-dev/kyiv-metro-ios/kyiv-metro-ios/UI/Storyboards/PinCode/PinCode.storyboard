@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pin Code View Controller-->
+        <scene sceneID="Mst-e3-JxW">
+            <objects>
+                <viewController storyboardIdentifier="PinCodeViewController" id="8lv-Hz-g3G" customClass="PinCodeViewController" customModule="kyiv_metro_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="540-z0-P20">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пін-код" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8No-4W-OBu">
+                                <rect key="frame" x="20" y="68" width="374" height="33"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Будь ласка введіть пін-код, що використовуватиметься для подальшого входу в профіль." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkw-sw-3c6">
+                                <rect key="frame" x="20" y="109" width="374" height="59.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="themeDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZJ-vz-fFC" customClass="KMTextField" customModule="kyiv_metro_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="192.5" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fVg-tc-OHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="themeDarkGray"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColor">
+                                        <color key="value" name="themeGreen"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEt-z4-A3P" customClass="KMTextField" customModule="kyiv_metro_ios" customModuleProvider="target">
+                                <rect key="frame" x="20" y="256.5" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="KVt-Nu-0Fn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="themeDarkGray"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColor">
+                                        <color key="value" name="themeGreen"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYK-CY-fRc" customClass="KMButton" customModule="kyiv_metro_ios" customModuleProvider="target">
+                                <rect key="frame" x="262" y="356.5" width="132" height="44"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" title="Продовжити" image="Vector &gt;">
+                                    <color key="titleColor" name="themeGreen"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continuePressed" destination="8lv-Hz-g3G" eventType="touchUpInside" id="b93-Hl-cQU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lgs-m3-X94" firstAttribute="trailing" secondItem="8No-4W-OBu" secondAttribute="trailing" constant="20" id="7DY-9r-9hO"/>
+                            <constraint firstItem="hZJ-vz-fFC" firstAttribute="leading" secondItem="Lgs-m3-X94" secondAttribute="leading" constant="20" id="8Tx-nC-cJy"/>
+                            <constraint firstItem="Qkw-sw-3c6" firstAttribute="leading" secondItem="Lgs-m3-X94" secondAttribute="leading" constant="20" id="B0m-Hg-0qq"/>
+                            <constraint firstItem="8No-4W-OBu" firstAttribute="leading" secondItem="Lgs-m3-X94" secondAttribute="leading" constant="20" id="DOo-Vo-oxj"/>
+                            <constraint firstItem="HYK-CY-fRc" firstAttribute="top" secondItem="OEt-z4-A3P" secondAttribute="bottom" constant="52" id="JIt-YH-c7K"/>
+                            <constraint firstItem="Lgs-m3-X94" firstAttribute="trailing" secondItem="OEt-z4-A3P" secondAttribute="trailing" constant="20" id="KzP-IR-v0t"/>
+                            <constraint firstItem="OEt-z4-A3P" firstAttribute="top" secondItem="hZJ-vz-fFC" secondAttribute="bottom" constant="16" id="Oi2-gf-CaB"/>
+                            <constraint firstItem="OEt-z4-A3P" firstAttribute="leading" secondItem="Lgs-m3-X94" secondAttribute="leading" constant="20" id="Wf8-qf-F4F"/>
+                            <constraint firstItem="Lgs-m3-X94" firstAttribute="trailing" secondItem="HYK-CY-fRc" secondAttribute="trailing" constant="20" id="ioD-il-fRg"/>
+                            <constraint firstItem="Qkw-sw-3c6" firstAttribute="top" secondItem="8No-4W-OBu" secondAttribute="bottom" constant="8" id="ppo-Fx-iPI"/>
+                            <constraint firstAttribute="trailing" secondItem="Qkw-sw-3c6" secondAttribute="trailing" constant="20" id="q5D-KU-Pec"/>
+                            <constraint firstItem="hZJ-vz-fFC" firstAttribute="top" secondItem="Qkw-sw-3c6" secondAttribute="bottom" constant="24" id="rBg-M7-Zei"/>
+                            <constraint firstItem="Lgs-m3-X94" firstAttribute="trailing" secondItem="hZJ-vz-fFC" secondAttribute="trailing" constant="20" id="wTc-Ul-myE"/>
+                            <constraint firstItem="8No-4W-OBu" firstAttribute="top" secondItem="Lgs-m3-X94" secondAttribute="top" constant="24" id="zu7-HS-j7V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lgs-m3-X94"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkPinCodeTextField" destination="OEt-z4-A3P" id="7xE-P5-isw"/>
+                        <outlet property="continueButton" destination="HYK-CY-fRc" id="aIp-VG-qcS"/>
+                        <outlet property="pinCodeTextField" destination="hZJ-vz-fFC" id="W7o-bY-kP0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ica-IS-YHS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.24637681159425" y="-65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vector &gt;" width="12" height="22"/>
+        <namedColor name="themeDarkGray">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeGreen">
+            <color red="0.20000000000000001" green="0.66666666666666663" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

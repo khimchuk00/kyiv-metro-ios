@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pXD-FB-ax1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Bnl-mF-p2S">
+            <objects>
+                <navigationController id="pXD-FB-ax1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I39-rO-PiM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HeK-lb-XKq" kind="relationship" relationship="rootViewController" id="Tq4-3l-l1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxg-SW-33B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691" y="167"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="8XA-8f-fib">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="HeK-lb-XKq" customClass="SplashViewController" customModule="kyiv_metro_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wUY-P9-V3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Kyiv Metropolitan" translatesAutoresizingMaskIntoConstraints="NO" id="hbq-f0-pXi">
+                                <rect key="frame" x="160.5" y="439.5" width="93" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="ZD3-h9-d2i"/>
+                                    <constraint firstAttribute="height" constant="71" id="yKs-mV-amt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Київський метрополітен" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-QA-tZQ">
+                                <rect key="frame" x="25" y="523.5" width="364" height="33"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="28"/>
+                                <color key="textColor" name="themeWhite"/>
+                                <color key="highlightedColor" name="themeWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by Riddletag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3U-Ou-kAb">
+                                <rect key="frame" x="153" y="829" width="108.5" height="13"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                <color key="textColor" name="themeWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="themeGreen"/>
+                        <constraints>
+                            <constraint firstItem="XaW-R2-WUZ" firstAttribute="trailing" secondItem="YFG-QA-tZQ" secondAttribute="trailing" constant="25" id="1gc-s7-Y0J"/>
+                            <constraint firstItem="b3U-Ou-kAb" firstAttribute="centerX" secondItem="XaW-R2-WUZ" secondAttribute="centerX" id="AAQ-lk-cDf"/>
+                            <constraint firstItem="YFG-QA-tZQ" firstAttribute="top" secondItem="hbq-f0-pXi" secondAttribute="bottom" constant="13" id="G69-yT-gWB"/>
+                            <constraint firstItem="YFG-QA-tZQ" firstAttribute="leading" secondItem="XaW-R2-WUZ" secondAttribute="leading" constant="25" id="HoV-eM-dS3"/>
+                            <constraint firstItem="hbq-f0-pXi" firstAttribute="centerX" secondItem="XaW-R2-WUZ" secondAttribute="centerX" id="Rf2-sS-8oN"/>
+                            <constraint firstItem="hbq-f0-pXi" firstAttribute="centerY" secondItem="XaW-R2-WUZ" secondAttribute="centerY" id="h8B-6a-jlA"/>
+                            <constraint firstItem="XaW-R2-WUZ" firstAttribute="bottom" secondItem="b3U-Ou-kAb" secondAttribute="bottom" constant="20" id="pvV-ga-1ME"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XaW-R2-WUZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sat-cM-y1E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICe-Np-IvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo Kyiv Metropolitan" width="93" height="71"/>
+        <namedColor name="themeGreen">
+            <color red="0.20000000000000001" green="0.66666666666666663" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

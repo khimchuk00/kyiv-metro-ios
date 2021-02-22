@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="nMd-Kw-uqs">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="Dzv-ad-Wp1" customClass="ProfileViewController" customModule="kyiv_metro_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xnH-gm-Kba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jos-2n-K1P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" name="themeMidGray"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4B-rk-65M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="232"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aty-pv-9sp">
+                                        <rect key="frame" x="126" y="35" width="162" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aty-pv-9sp" secondAttribute="height" multiplier="1:1" id="los-7k-K0V"/>
+                                            <constraint firstAttribute="width" constant="162" id="sdu-oe-Ypd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-bv-Chl">
+                                        <rect key="frame" x="240" y="35" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zpv-bv-Chl" secondAttribute="height" multiplier="1:1" id="EWc-zv-EC8"/>
+                                            <constraint firstAttribute="width" constant="48" id="bGM-JP-vzC"/>
+                                        </constraints>
+                                        <state key="normal" image="addPhotoButton"/>
+                                        <connections>
+                                            <action selector="addPhotoButtonPressed" destination="Dzv-ad-Wp1" eventType="touchUpInside" id="mGd-4K-e7g"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hX-6I-tV7">
+                                        <rect key="frame" x="16" y="231" width="382" height="1"/>
+                                        <color key="backgroundColor" name="themeLightGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="hBX-1n-TDI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="aty-pv-9sp" firstAttribute="centerY" secondItem="Z4B-rk-65M" secondAttribute="centerY" id="2JM-u6-hYj"/>
+                                    <constraint firstItem="aty-pv-9sp" firstAttribute="centerX" secondItem="Z4B-rk-65M" secondAttribute="centerX" id="5AT-mR-2kh"/>
+                                    <constraint firstAttribute="bottom" secondItem="7hX-6I-tV7" secondAttribute="bottom" id="DcX-XR-sGy"/>
+                                    <constraint firstItem="Zpv-bv-Chl" firstAttribute="trailing" secondItem="aty-pv-9sp" secondAttribute="trailing" id="Q9o-EH-H7W"/>
+                                    <constraint firstAttribute="trailing" secondItem="7hX-6I-tV7" secondAttribute="trailing" constant="16" id="n4j-eF-twN"/>
+                                    <constraint firstAttribute="width" secondItem="Z4B-rk-65M" secondAttribute="height" multiplier="375:210" id="r8G-dC-Ecn"/>
+                                    <constraint firstItem="Zpv-bv-Chl" firstAttribute="top" secondItem="aty-pv-9sp" secondAttribute="top" id="u3p-CY-Z1x"/>
+                                    <constraint firstItem="7hX-6I-tV7" firstAttribute="leading" secondItem="Z4B-rk-65M" secondAttribute="leading" constant="16" id="uin-fn-EA1"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-Gr-XWT">
+                                <rect key="frame" x="0.0" y="276" width="414" height="586"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="themeWhite"/>
+                        <constraints>
+                            <constraint firstItem="jos-2n-K1P" firstAttribute="top" secondItem="VNV-9r-sTb" secondAttribute="top" id="7s9-qV-iVs"/>
+                            <constraint firstItem="jos-2n-K1P" firstAttribute="leading" secondItem="VNV-9r-sTb" secondAttribute="leading" id="FJB-ck-Z9C"/>
+                            <constraint firstItem="VNV-9r-sTb" firstAttribute="bottom" secondItem="n4W-Gr-XWT" secondAttribute="bottom" id="KmB-D1-Q5a"/>
+                            <constraint firstItem="VNV-9r-sTb" firstAttribute="trailing" secondItem="Z4B-rk-65M" secondAttribute="trailing" id="Ly3-by-lc7"/>
+                            <constraint firstItem="VNV-9r-sTb" firstAttribute="trailing" secondItem="jos-2n-K1P" secondAttribute="trailing" id="NaS-8O-LGg"/>
+                            <constraint firstItem="Z4B-rk-65M" firstAttribute="leading" secondItem="VNV-9r-sTb" secondAttribute="leading" id="QTr-mz-Rus"/>
+                            <constraint firstItem="n4W-Gr-XWT" firstAttribute="leading" secondItem="VNV-9r-sTb" secondAttribute="leading" id="WEz-Rj-wZu"/>
+                            <constraint firstAttribute="bottom" secondItem="jos-2n-K1P" secondAttribute="bottom" id="dqn-X7-fJ4"/>
+                            <constraint firstItem="Z4B-rk-65M" firstAttribute="top" secondItem="VNV-9r-sTb" secondAttribute="top" id="qBV-UH-rSi"/>
+                            <constraint firstItem="VNV-9r-sTb" firstAttribute="trailing" secondItem="n4W-Gr-XWT" secondAttribute="trailing" id="tE0-E2-acF"/>
+                            <constraint firstItem="n4W-Gr-XWT" firstAttribute="top" secondItem="Z4B-rk-65M" secondAttribute="bottom" id="tTN-IU-59d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VNV-9r-sTb"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePhoto" destination="aty-pv-9sp" id="vK7-dg-8Df"/>
+                        <outlet property="tableView" destination="n4W-Gr-XWT" id="j51-Dl-nxJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfc-mP-F21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="-38.169642857142854"/>
+        </scene>
+        <!--Metro Map Scheme View Controller-->
+        <scene sceneID="F9Q-cT-Dzi">
+            <objects>
+                <viewController storyboardIdentifier="MetroMapSchemeViewController" id="0uS-J9-K8P" customClass="MetroMapSchemeViewController" customModule="kyiv_metro_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ND5-7j-7Ob">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" minimumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="LtW-kM-du3" customClass="ImageScrollView" customModule="kyiv_metro_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Vhi-J0-gyZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YhP-w7-N2H"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="metro_scheme"/>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LtW-kM-du3" firstAttribute="trailing" secondItem="Vg8-Hk-9Mz" secondAttribute="trailing" id="4AY-eJ-aBP"/>
+                            <constraint firstItem="LtW-kM-du3" firstAttribute="bottom" secondItem="Vg8-Hk-9Mz" secondAttribute="bottom" id="AXR-AL-5SS"/>
+                            <constraint firstItem="LtW-kM-du3" firstAttribute="leading" secondItem="Vg8-Hk-9Mz" secondAttribute="leading" id="ITd-A7-CQ2"/>
+                            <constraint firstItem="LtW-kM-du3" firstAttribute="top" secondItem="Vg8-Hk-9Mz" secondAttribute="top" id="xsn-3J-T1J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vg8-Hk-9Mz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZV5-xI-LnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="-39.508928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addPhotoButton" width="48" height="48"/>
+        <image name="metro_scheme" width="1883" height="1968"/>
+        <namedColor name="themeLightGray">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeMidGray">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="themeWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
